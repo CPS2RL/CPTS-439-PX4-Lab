@@ -238,7 +238,7 @@ d. Flipped attack causes move in a trajectory where the X and Y positions are fl
 
 e. Scaled attack causes move in a trajectory where the X and Y movements are scaled by a constant (i.e., if the mission is for the vehicle to move along x axis by 2 meters, in actualality it would move by 2*constant).
 
-f. The mp2_server.py outputs exfil_traj.npy which can be used by the prior plotting script by finding changing the "traj.npy" to "exfil_traj.npy".
+f. The <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;"> mp2_server.py  </kbd>  outputs <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;"> exfil_traj.npy  </kbd>   which can be used by the prior plotting script by finding changing the "traj.npy" to "exfil_traj.npy".
 
 
 Note: For each of the above missions, repeat them for the missions from the first section of this MP's Instructions, i.e. linear and circular.
