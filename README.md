@@ -1,5 +1,3 @@
-# PX4-Lab
-
 # Secure Autonomous Systems
 
 
