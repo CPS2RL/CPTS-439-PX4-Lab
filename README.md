@@ -200,24 +200,25 @@ d. Modify the <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; pad
 
 e. Add <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;">memcpy()  </kbd>  mp2_lib.cpp and <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;">memcpy()  </kbd>  mp2_lib.h in<kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;">memcpy()  </kbd>   CMakeLists.txt under SRC
 
-f. Modify the mp2.cpp inside the modules/mp2 to read the new topic.
+f. Modify the <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;">memcpy()  </kbd>  mp2.cpp inside the <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;">memcpy()  </kbd>   modules/mp2 to read the new topic.
 
-           1. Initizlize the mp2server in the MP2contructor
-            ![mp2_module_1](https://github.com/fakhruddinbabor7/px4_lab/assets/71979845/afeefd24-091a-4869-923d-9fe431d96a0a)
+1. Initizlize the <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;">mp2server  </kbd>   in the <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;">MP2contructor  </kbd>  
+    ![mp2_module_1](https://github.com/fakhruddinbabor7/px4_lab/assets/71979845/afeefd24-091a-4869-923d-9fe431d96a0a)
 
-           2. Subscribe to vehicle_local_position_copy instead of vehicle_local_position (refer to MP2 part A, remember to change the struct type as well)
+2. Subscribe to <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;">vehicle_local_position_copy  </kbd>   instead of <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;">vehicle_local_position  </kbd>   (refer to MP2 part A, remember to change the struct type as well)
 
-           3. Inside the run() function, use mp2server.exfiltrate() to send the subscribed data to the server and mp2server.recieve() to get the offset values back from the server.
+3. Inside the <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;">run()  </kbd>   function, use <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;">mp2server.exfiltrate()  </kbd>   to send the subscribed data to the server and <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;">mp2server.recieve()  </kbd> 
+  to get the offset values back from the server.
               ![mp2_module_2](https://github.com/fakhruddinbabor7/px4_lab/assets/71979845/868c638c-80b7-4f4e-95b6-3a971bae1f24)
 
-          4. Create vehicle_local_position struct and memcpy() the subscribed data to the struct.
+4. Create <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;">vehicle_local_position  </kbd>   struct and <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;">memcpy()  </kbd> the subscribed data to the struct.
 
-          5. Add the values recieved from the server to the x, y, z position of the struct.
+5. Add the values recieved from the server to the x, y, z position of the struct.
 
-          6. Create publishing id (similar to how there was subscribe id in part A) using orb_advertise()
+6. Create publishing id (similar to how there was subscribe id in part A) using <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;"> orb_advertise()  </kbd> 
 
-          7. Publish the topic using orb_publish()
-             ![mp2_module_3](https://github.com/fakhruddinbabor7/px4_lab/assets/71979845/656b60f9-2f7a-4d6d-b335-97ef41342e7f)
+7. Publish the topic using <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;"> orb_publish()  </kbd>  
+   ![mp2_module_3](https://github.com/fakhruddinbabor7/px4_lab/assets/71979845/656b60f9-2f7a-4d6d-b335-97ef41342e7f)
 
 4. Implement the attack types in the mp2_server.py
 
