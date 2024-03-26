@@ -226,17 +226,17 @@ f. Modify the <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; pad
 
 4. Implement the attack types in the mp2_server.py
 
-       a. Find the "TODO:" flags in the script and implement the corresponding attack.
+a. Find the "TODO:" flags in the script and implement the corresponding attack.
 
-       b. Fixed offset attack adds fixed constant value (of your choosing) to each of the position values (specify the value you used in the report).
+b. Fixed offset attack adds fixed constant value (of your choosing) to each of the position values (specify the value you used in the report).
 
-       c. Random offset attack adds random value in a specified range (of your choosing) to each of the position values (specify the range of values you used in the report).
+c. Random offset attack adds random value in a specified range (of your choosing) to each of the position values (specify the range of values you used in the report).
 
-       d. Flipped attack causes move in a trajectory where the X and Y positions are flipped.
+d. Flipped attack causes move in a trajectory where the X and Y positions are flipped.
 
-       e. Scaled attack causes move in a trajectory where the X and Y movements are scaled by a constant (i.e., if the mission is for the vehicle to move along x axis by 2 meters, in actualality it would move by 2*constant).
+e. Scaled attack causes move in a trajectory where the X and Y movements are scaled by a constant (i.e., if the mission is for the vehicle to move along x axis by 2 meters, in actualality it would move by 2*constant).
 
-       f. The mp2_server.py outputs exfil_traj.npy which can be used by the prior plotting script by finding changing the "traj.npy" to "exfil_traj.npy".
+f. The mp2_server.py outputs exfil_traj.npy which can be used by the prior plotting script by finding changing the "traj.npy" to "exfil_traj.npy".
 
 
 Note: For each of the above missions, repeat them for the missions from the first section of this MP's Instructions, i.e. linear and circular.
