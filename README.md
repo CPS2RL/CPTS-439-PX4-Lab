@@ -223,6 +223,7 @@ f. Modify the <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; pad
 
    ![mp2_module_3](https://github.com/fakhruddinbabor7/px4_lab/assets/71979845/656b60f9-2f7a-4d6d-b335-97ef41342e7f)
 
+
 4. Implement the attack types in the mp2_server.py
 
        a. Find the "TODO:" flags in the script and implement the corresponding attack.
