@@ -1,7 +1,7 @@
 # Secure Autonomous Systems
 
 
-## Objective
+## Objective  
 
 There are multiple flight firmwares with different architectures and design principles, but understanding one of them helps with understanding others. In this project, we will delve into [PX4 autopilot](https://px4.io/), an open-source autopilot firmware. The following objectives are designed to help you familiarize yourself with flight controller firmware:
 
