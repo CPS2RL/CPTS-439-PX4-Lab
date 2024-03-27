@@ -38,12 +38,12 @@ We prepared a VM image which has the PX4 setup. The setup has the following syst
 2. **At least** 4GB memory
 3. **VirtualBox/VMWare** (Note: Virtual Machines do not work very well with Apple M1/2 Macs, therefore it's advised to use an Intel Based Machine.)
 
-To setup, download the VM image from here. The username and password for the VM image is <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;">student</kbd>
+To setup, download the VM image from [here](https://emailwsu-my.sharepoint.com/:u:/g/personal/m_babar_wsu_edu/ERgcfxQswZRKv9rRjVGZu1wBhbZ76FJ46aLUd4U1vDDipQ?e=BDgA2s). The username and password for the VM image is <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;">student</kbd>
 
 
 ## Running the PX4-SITL
 **Running the simulator**
-1. Download the VM image here.
+1. Download the VM image [here](https://emailwsu-my.sharepoint.com/:u:/g/personal/m_babar_wsu_edu/ERgcfxQswZRKv9rRjVGZu1wBhbZ76FJ46aLUd4U1vDDipQ?e=BDgA2s).
 
 2. Inside the VM, change the directory to the PX4: <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;"> cd /home/student/Desktop/MP2/PX4-Autopilot/</kbd>
 
