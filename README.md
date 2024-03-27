@@ -28,7 +28,7 @@ Middleware, also called Data Distribution Service (DDS), is an integral part in 
 
 There also exists Ardupilot, another autopilot software, which uses Robotic Operating System (ROS) as middleware. uORB is similar to the original ROS since they follow the publish/subscribe paradigm.
 
-Because application of these middleswares are safety-critical in nature, there are some security concerns since both were not initially designed with security in mind. ROS2, a newer standard of ROS with major changes, which was released (late 2010s) follows a DDS security specification The specification allows authentication, authorization, and encryption.
+Because application of these middleswares are safety-critical in nature, there are some security concerns since both were not initially designed with security in mind. [ROS2](https://docs.ros.org/en/galactic/index.html), a newer standard of ROS with major changes, which was released (late 2010s) follows a [DDS security specification](https://www.omg.org/spec/DDS-SECURITY/1.1/About-DDS-SECURITY/) The specification allows authentication, authorization, and encryption.
 
 Therefore, in this MP, we will investigate why such security measures are necessary by performing MitM by hijacking a uORB topic. We assume the adversary (you) can deploy its malicious module into PX4 and can slightly change particular module of the firmware(specifically the EKF module).
 
@@ -73,9 +73,9 @@ Mavlink is the messaging protocol used by UAVs and rovers which contains informa
 -  The protocol also contains commands to control the vehicle.
 -  Offboard control is a method of controlling the UAV like a script.
 -  For instance, the offboard control script can command the vehicle to move up by a meter or maintain certain velocity or attitude.
--  In this MP, we will be using MAVSDK-Python and the script is located in <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;"> ~/Desktop/MP2/mp2_offboard_control.py </kbd>  
--  Check out the example script to implement the missions.
--  Also checkout the API documentation.
+-  In this MP, we will be using [MAVSDK-Python](https://github.com/mavlink/MAVSDK-Python) and the script is located in <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;"> ~/Desktop/MP2/mp2_offboard_control.py </kbd>  
+-  Check out the [example script](https://github.com/mavlink/MAVSDK-Python/blob/main/examples/offboard_position_ned.py) to implement the missions.
+-  Also checkout the [API documentation](http://mavsdk-python-docs.s3-website.eu-central-1.amazonaws.com/plugins/offboard.html).
 - Implement linear mission
   
       1. Place the setpoint to 10 meters above the ground for takeoff.
