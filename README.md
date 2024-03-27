@@ -106,7 +106,7 @@ Mavlink is the messaging protocol used by UAVs and rovers which contains informa
   - If the polling recieves the topic of interest, the data can be read by first creating the struct to hold the data: <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;"> struct INSERT_TOPIC_NAME_s topic_msg  </kbd>.
   - For example, to create a struct variable to hold the <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;">sensor_gyro</kbd>  message, use <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;"> struct sensor_gyro_s var_name  </kbd>.
   - Copy the data to the struct using <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;"> orb_copy(topic id, subscription id, reference to struct) </kbd>  (e.g., for <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;"> sensor_gyro  </kbd> , it would be <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;"> orb_copy(ORB_ID(sensor_gyro), gyro_sub_id, &var_name);  </kbd>.
-  - Check out this link for a more indepth tutorial. Therefore for this task, subscribe to that topic and have the position information print out using <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;"> PX4_INFO() </kbd>  which takes input like <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;"> printf()  </kbd>.
+  - Check out this [link](https://nxp.gitbook.io/hovergames/developerguide/px4-tutorial-example-code/hg-px4-example-lab-1#fetching-data-from-the-topic) for a more indepth tutorial. Therefore for this task, subscribe to that topic and have the position information print out using <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;"> PX4_INFO() </kbd>  which takes input like <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;"> printf()  </kbd>.
   
 ## 4.Man-In-The-Middle
 
@@ -118,7 +118,7 @@ For this section:
 
 
 **A. Adjustments in Running the PX4-SITL**
-For this section, there is an extra step where you have to run a server script. There are additional files which you must download from here which contains the <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;">  mp2_server.py  </kbd>  and <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;"> mp2_lib  </kbd>. Later instructional steps will describe where to correctly extract the additional files.
+For this section, there is an extra step where you have to run a server script. There are additional files which you must download from [here](https://emailwsu-my.sharepoint.com/:f:/g/personal/m_babar_wsu_edu/EvHMw3704HlGiJgTZet_F-oByo8XPh3WJURNKT8fU4gdkA?e=9EraZT) which contains the <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;">  mp2_server.py  </kbd>  and <kbd style="background-color: #f0f0f0; border: 1px solid #ddd; padding: 5px;"> mp2_lib  </kbd>. Later instructional steps will describe where to correctly extract the additional files.
 
 **Running the simulator**
 
